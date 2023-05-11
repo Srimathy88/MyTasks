@@ -1,0 +1,23 @@
+SUBROUTINE ID.RTN
+*-----------------------------------------------------------------------------
+*
+*-----------------------------------------------------------------------------
+* Modification History :
+*-----------------------------------------------------------------------------
+*Author@Srimathy---------------------------------------------------
+
+    $INSERT I_COMMON
+    $INSERT I_EQUATE
+
+    IF APPLICATION NE "ENQUIRY" THEN RETURN
+    IF COMI THEN
+        IF COMI[1,1] NE '%' AND FIELD(COMI,'-',2)[1,4] NE 'LIST' THEN
+            COMI="ENQ-":COMI
+            IF LEN(COMI) GT 30 THEN
+                E="ID CHARACTERS SHOULD NOT EXCEED 30"
+            END
+        END
+    END
+RETURN
+END
+                       
