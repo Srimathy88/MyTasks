@@ -9,7 +9,7 @@ import com.temenos.t24.api.hook.system.Enquiry;
 /**
  * TODO: Document me!
  *
- * @author 91875
+ * @author User1
  *
  */
 public class AccBuildEnq extends Enquiry {
