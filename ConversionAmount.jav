@@ -13,7 +13,7 @@ import com.temenos.t24.api.system.Session;
 /**
  * TODO: Document me!
  *
- * @author santh
+ * @author Srimathy B
  *
  */
 public class ConversionAmount extends Enquiry {
